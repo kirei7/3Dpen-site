@@ -1,0 +1,54 @@
+/*.gallery-top>div {
+    background-image: url('../img/img-1.jpg');
+    background-position: center top;
+}*/
+.gal h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+.gal a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.modal-trigger {
+    text-align: center;
+    height: 215px;
+}
+
+.gal img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: inline-block !important;
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.gal a>img {
+    max-width: 300px;
+}
+@media (min-width: 768px) {
+    .gal .img-hover {
+        background: rgba(81, 243, 142, 0.6);
+        display: none;
+    }
+    .gal>div:hover div.img-hover {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+@media (max-width: 1199px) {
+    .modal-trigger {
+        height: 205px;
+    }
+}
