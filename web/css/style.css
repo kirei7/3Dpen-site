@@ -148,12 +148,12 @@ body a{
  }
 .banner-wrapper{
     background-color: rgba(1,1,1,0.5);
-    min-height:750px;
+    min-height: 630px;
 }
 .banner{
 	background-image: url(../pic/banner.jpg);
-	background-size: 750px auto;
-	min-height:750px;
+	background-size: 630px auto;
+	min-height: 630px;
     background-position: 100%;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -181,7 +181,6 @@ body a{
 }
 .banner-text{
 	margin-top: 1.5em;
-    margin-bottom: 7em;
 }
 .banner-text ul li a {
 	color: #fff;
@@ -510,10 +509,16 @@ body a{
 	background:#141414;
 	padding: 4em 0px;
 }
-.footer-main-left h3{
-	color:#fff;
-	margin: 0px;
-	padding-bottom: 1.5em;
+.footer-main-left>form>* {
+    padding-bottom: 0.5em;
+    background-color: #474747;
+    border-color: #545454;
+    color: #989898;
+}
+.footer-main-left button:hover {
+    background-color: #929292;
+    border-color: #929292;
+    color: #343434  ;
 }
 .footer-main-right{
 	text-align:right;
@@ -597,7 +602,7 @@ body a{
 }
 @media (max-width:1280px){
 .banner {
-	min-height: 700px;
+	min-height: 630px;
 }
 /*.banner-text h1 {
 	font-size: 3.7em;
@@ -843,8 +848,9 @@ ul.nav{
 .footer-main-right p {
 	padding-top: 1em;
 }
-.footer-main-left h3 {
+.footer-main-left>form>* {
 	padding-bottom: 0.5em;
+    background-color: #474747;
 }
 .footer-bottom {
 	padding-bottom: 2em;

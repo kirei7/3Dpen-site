@@ -74,7 +74,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-10 col-sm-5 advantages">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0    col-sm-5 advantages">
                     <ul>
                         <li>Гарантия 365 дней;</li>
                         <li>Оплата после получения товара;</li>
@@ -108,7 +108,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <span>3D ручка RP800A</span>
                     <p class="text-crossed">2180 грн.</p>
                     <p>1860 грн.</p>
-                    <button>Купить</button>
+                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
                 </div>
 
             </div>
@@ -134,7 +134,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <span>3D РУЧКА — RP-100A</span>
                     <p class="text-crossed">1650 грн.</p>
                     <p>1380 грн.</p>
-                    <button>Купить</button>
+                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
                 </div>
             </div>
             <div class="col-sm-4 col-sm-offset-2">
@@ -159,7 +159,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <span>3D РУЧКА — RP-100В</span>
                     <p class="text-crossed">1920 грн.</p>
                     <p>1550 грн.</p>
-                    <button>Купить</button>
+                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -248,7 +248,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
-<div class="work" id="work">
+<!--<div class="work" id="work">
     <div class="container">
         <div class="work-main">
             <div class="work-top">
@@ -294,7 +294,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <div class="choose">
     <div class="container">
         <div class="choose-main">
@@ -478,29 +478,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="footer">
     <div class="container">
         <div class="footer-main">
-            <div class="col-md-6 footer-main-left">
-                <h3>JEWELERY</h3>
-
-                <div class="footer-bottom">
-                    <div class="col-md-6 footer-bottom-left">
-                        <p class=active>Production time</p>
-
-                        <p>Questions and answers </p>
-
-                        <p>Payment methods</p>
-                    </div>
-                    <div class="col-md-6 footer-bottom-left">
-                        <p>Shipping information</p>
-
-                        <p>Feedback</p>
-
-                        <p>User agreement</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
+            <div class="col-sm-3 footer-main-left">
+                <form>
+                    <input type="text" class="form-control" id="form-name" placeholder="Ваше имя" required>
+                    <input type="text" class="form-control" id="form-phone" placeholder="Ваш номер телефона"
+                           required>
+                    <button type="submit" class="btn btn-default form-control">Заказать!</button>
+                </form>
             </div>
-            <div class="col-md-6 footer-main-right">
+            <div class="col-sm-6 col-sm-offset-3 footer-main-right">
                 <ul>
                     <li><a href="#"><span class="facebook"></span></a></li>
                     <li><a href="#"><span class="twitter"></span></a></li>
