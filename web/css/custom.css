@@ -10,10 +10,11 @@
     max-height: 250px;
 }
 .merch-item span {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 .merch-item p {
     color: #269abc;
+    font-weight: bold;
 }
 .phone {
     color: #ffffff;
@@ -37,7 +38,8 @@
 }
 
 .form-control {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
+    font-size: 18px;
 }
 .form-container, .advantages {
     padding: 20px 10px;
@@ -49,7 +51,7 @@
     padding: 0 0 10px 0;
 }
 .form-container form {
-    padding: 10px;
+    padding: 10px 15px;
 }
 .promo img {
     width: 100%;
@@ -67,10 +69,40 @@
 .form-text {
     background-color: #ffdd00;
     border-radius: 13px 13px 0 0;
-    padding: 20px 10px 0 10px;
+    padding: 20px 5px;
     margin-bottom: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.call-icon {
+    position: fixed;
+    top: 40px;
+    right: 50px;
+}
+
+.call-icon img {
+    width: 70px;
+    height: 100%;
+}
+.call-icon a:hover {
+    border: none;
+}
+.text-crossed {
+    text-decoration: line-through;
+    color: #c3c3c3 !important;
+}
+#modal-form {
+    padding: 30px 12px;
+}
+#modal-form>.modal-dialog {
+    width: 450px;
+}
+#modal-form form>*{
+    width: 340px;
+    display: block;
+    margin: 10px auto;
+
 }
 @media (min-width: 768px) {
     #nav {
