@@ -298,7 +298,6 @@ body a{
 }
 .about {
 	background: #FAF8F9;
-	padding:5em 0px;
 }
 .about-right h3{
 	font-size:1.8em;
@@ -865,9 +864,7 @@ ul.nav{
 	padding: 0.8em 0px 5px 0px;
 	line-height: 1.2em;
 }
-.about {
-	padding: 3em 0px;
-}
+
 .about-right h3 {
 	margin: 1.5em 0px 0px 0px;
 }
