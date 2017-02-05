@@ -15,6 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
+
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
     <link href="css/gal.css" rel='stylesheet' type='text/css'/>
@@ -25,6 +26,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!---- start-smoth-scrolling---->
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
+
+    <!-- Fotorama -->
+    <link href="js/fotorama-4.6.4/fotorama.css" rel="stylesheet">
+    <script src="js/fotorama-4.6.4/fotorama.js"></script>
 </head>
 <body>
 <div class="banner" id="home">
@@ -99,137 +104,96 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
+
 <div class="about" id="about">
+s
     <div class="pens">
-        <div class="row merch-item">
-            <div class="col-md-offset-2 col-md-5 text-center">
-                    <img src="img/merch/merch3.jpg">
-            </div>
-                <div class="col-md-3 merch-item-info">
-                <div>
-                    <span>3D ручка RP800A</span>
-                    <p class="text-crossed">2180 грн.</p>
-                    <p>1860 грн.</p>
-                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
+            <div class="fotorama row" data-width="100%" data-height="100%" data-max-width="100%" data-nav="thumbs">
+                <div class="merch-item" data-thumb="img/merch/merch3.jpg">
+                    <div class="col-md-offset-2 col-md-5 text-center">
+                        <img src="img/merch/merch3.jpg">
+                    </div>
+                    <div class="col-md-3 merch-item-info">
+                        <div>
+                            <span>3D ручка RP800A</span>
+                            <p class="text-crossed">2180 грн.</p>
+                            <p>1860 грн.</p>
+                            <button data-toggle="modal" data-target="#modal-form">Купить</button>
+                        </div>
+                        <h2>Характеристики</h2>
+                        <ul>
+                            <li>Цвет:синий</li>
+                            <li>Моделирование: трехмерное</li>
+                            <li>Рабочая температура: 130-240 °С</li>
+                            <li>Материал пластиковой нити: ABS/PLA</li>
+                            <li>Питание: 5 В, работа от USB;</li>
+                            <li>Диаметр пластиковой нити: 1,75 мм</li>
+                            <li>Размеры ручки: 175 (длина) х 20 (ширина) х 17 (высота) мм</li>
+                            <li>Диаметр сопла: 0,6 мм</li>
+                            <li>Масса нетто: 40 грамм</li>
+                        </ul>
+                    </div>
                 </div>
-                <h2>Характеристики</h2>
-                <ul>
-                    <li>Цвет:синий</li>
-                    <li>Моделирование: трехмерное</li>
-                    <li>Рабочая температура: 130-240 °С</li>
-                    <li>Материал пластиковой нити: ABS/PLA</li>
-                    <li>Питание: 5 В, работа от USB;</li>
-                    <li>Диаметр пластиковой нити: 1,75 мм</li>
-                    <li>Размеры ручки: 175 (длина) х 20 (ширина) х 17 (высота) мм</li>
-                    <li>Диаметр сопла: 0,6 мм</li>
-                    <li>Масса нетто: 40 грамм</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row merch-item item-even">
-            <div class="col-md-offset-2 col-md-5 text-center">
-                <img src="img/merch/merch2.jpg">
-            </div>
-            <div class="col-md-3 merch-item-info">
-                <div>
-                    <span>3D РУЧКА — RP-100A</span>
-                    <p class="text-crossed">1650 грн.</p>
-                    <p>1380 грн.</p>
-                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
-                </div>
-                <h2>Характеристики</h2>
-                <ul>
-                    <li>цвет: оранжевый, желтый</li>
-                    <li>Моделирование: трехмерное</li>
-                    <li>Рабочая температура 160-230 °С</li>
-                    <li>Материал пластиковой нити: ABS</li>
-                    <li>Питание: 12 В, работа от USB;</li>
-                    <li>Диаметр пластиковой нити: 1,75 мм</li>
-                    <li>Размеры ручки: 180 (длина) х70 (ширина) х 125 (высота) мм</li>
-                    <li>Диаметр сопла:  0,7мм</li>
-                    <li>Масса нетто:  59 грамм</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row merch-item">
-            <div class="col-md-offset-2 col-md-5 text-center">
-                <img src="img/merch/merch1.jpg">
-            </div>
-            <div class="col-md-3 merch-item-info">
-                <div>
-                    <span>3D РУЧКА — RP-100В</span>
-                    <p class="text-crossed">1920 грн.</p>
-                    <p>1550 грн.</p>
-                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
-                </div>
-                <h2>Характеристики</h2>
-                <ul>
-                    <li>цвет: желтый, голубой</li>
-                    <li>Моделирование: трехмерное</li>
-                    <li>Рабочая температура 160-230 °С</li>
-                    <li>Материал пластиковой нити: ABS/PLA</li>
-                    <li>Питание: 12 В, работа от USB;</li>
-                    <li>Диаметр пластиковой нити: 1,75 мм</li>
-                    <li>Размеры ручки: 180 (длина) х70 (ширина) х 125 (высота) мм</li>
-                    <li>Диаметр сопла:  0,7мм</li>
-                    <li>Масса нетто:  59 грамм</li>
-                </ul>
-            </div>
-        </div>
 
-       <!-- <div class="row">
-            <div class="col-sm-3 col-sm-push-9 text-center">
-                <div class="thumbnail merch-item">
-                    <img src="img/merch/merch2.jpg" height="270">
-                    <span>3D РУЧКА — RP-100A</span>
-                    <p class="text-crossed">1650 грн.</p>
-                    <p>1380 грн.</p>
-                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
-                </div>
-            </div>
-            <div class="col-sm-4 col-sm-offset-2">
-                <ul>
-                    <li>цвет: оранжевый, желтый</li>
-                    <li>Моделирование: трехмерное</li>
-                    <li>Рабочая температура 160-230 °С</li>
-                    <li>Материал пластиковой нити: ABS</li>
-                    <li>Питание: 12 В, работа от USB;</li>
-                    <li>Диаметр пластиковой нити: 1,75 мм</li>
-                    <li>Размеры ручки: 180 (длина) х70 (ширина) х 125 (высота) мм</li>
-                    <li>Диаметр сопла:  0,7мм</li>
-                    <li>Масса нетто:  59 грамм</li>
-                </ul>
-            </div>
 
-        </div>
-        <div class="row">
-            <div class="col-sm-3 text-center">
-                <div class="thumbnail merch-item">
-                    <img src="img/merch/merch1.jpg" height="270">
-                    <span>3D РУЧКА — RP-100В</span>
-                    <p class="text-crossed">1920 грн.</p>
-                    <p>1550 грн.</p>
-                    <button data-toggle="modal" data-target="#modal-form">Купить</button>
+
+                <div class="merch-item" data-thumb="img/merch/merch2.jpg">
+                    <div class="col-md-offset-2 col-md-5 text-center">
+                        <img src="img/merch/merch2.jpg">
+                    </div>
+                    <div class="col-md-3 merch-item-info">
+                        <div>
+                            <span>3D РУЧКА — RP-100A</span>
+                            <p class="text-crossed">1650 грн.</p>
+                            <p>1380 грн.</p>
+                            <button data-toggle="modal" data-target="#modal-form">Купить</button>
+                        </div>
+                        <h2>Характеристики</h2>
+                        <ul>
+                            <li>цвет: оранжевый, желтый</li>
+                            <li>Моделирование: трехмерное</li>
+                            <li>Рабочая температура 160-230 °С</li>
+                            <li>Материал пластиковой нити: ABS</li>
+                            <li>Питание: 12 В, работа от USB;</li>
+                            <li>Диаметр пластиковой нити: 1,75 мм</li>
+                            <li>Размеры ручки: 180 (длина) х70 (ширина) х 125 (высота) мм</li>
+                            <li>Диаметр сопла:  0,7мм</li>
+                            <li>Масса нетто:  59 грамм</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <ul>
-                    <li>цвет: желтый, голубой</li>
-                    <li>Моделирование: трехмерное</li>
-                    <li>Рабочая температура 160-230 °С</li>
-                    <li>Материал пластиковой нити: ABS/PLA</li>
-                    <li>Питание: 12 В, работа от USB;</li>
-                    <li>Диаметр пластиковой нити: 1,75 мм</li>
-                    <li>Размеры ручки: 180 (длина) х70 (ширина) х 125 (высота) мм</li>
-                    <li>Диаметр сопла:  0,7мм</li>
-                    <li>Масса нетто:  59 грамм</li>
-                </ul>
-            </div>
-        </div>
--->
+
+
+
+                <div class="merch-item" data-thumb="img/merch/merch1.jpg">
+                    <div class="col-md-offset-2 col-md-5 text-center">
+                        <img src="img/merch/merch1.jpg">
+                    </div>
+                    <div class="col-md-3 merch-item-info">
+                        <div>
+                            <span>3D РУЧКА — RP-100В</span>
+                            <p class="text-crossed">1920 грн.</p>
+                            <p>1550 грн.</p>
+                            <button data-toggle="modal" data-target="#modal-form">Купить</button>
+                        </div>
+                        <h2>Характеристики</h2>
+                        <ul>
+                            <li>цвет: желтый, голубой</li>
+                            <li>Моделирование: трехмерное</li>
+                            <li>Рабочая температура 160-230 °С</li>
+                            <li>Материал пластиковой нити: ABS/PLA</li>
+                            <li>Питание: 12 В, работа от USB;</li>
+                            <li>Диаметр пластиковой нити: 1,75 мм</li>
+                            <li>Размеры ручки: 180 (длина) х70 (ширина) х 125 (высота) мм</li>
+                            <li>Диаметр сопла:  0,7мм</li>
+                            <li>Масса нетто:  59 грамм</li>
+                        </ul>
+                    </div>
+                </div>
 
     </div>
 </div>
+    </div>
 <div class="promo" id="promo">
     <div class="container">
         <div class="promo-main">
@@ -591,5 +555,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
