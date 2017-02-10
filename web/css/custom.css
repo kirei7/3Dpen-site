@@ -1,9 +1,17 @@
 .merch-item {
     border-radius: 12px;
     padding: 30px 0;
+    height: 105%;
 }
 .merch-item img {
-    max-width: 100%;
+    max-width: 290px;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.align-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 .merch-item span {
     font-size: 1.2em;
@@ -55,6 +63,15 @@
 .promo, .pens ul{
     font-size: 20px;
 }
+.promo-main .row {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.pens>div {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    background: #FAF8F9;
+}
 .advantages {
     color: #fff;
     font-size: 18px;
@@ -88,7 +105,16 @@
     text-decoration: line-through;
     color: #c3c3c3 !important;
 }
-
+.choose-main p {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: normal;
+}
+.choose-main>div>div>div {
+    height: 128px;
+    line-height: 128px;
+    display: table;
+}
 .merch-item-info ul {
     font-size: 16px;
 }
@@ -111,6 +137,33 @@
     margin: 10px auto;
 
 }
+/*SLIDER*/
+div.fotorama__arr {
+    height: 100%;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    width: 128px;
+}
+div.fotorama__arr--prev {
+    left: 10%;
+    background-image: url(../pic/arrow-left.png),-webkit-linear-gradient(to right, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-image: url(../pic/arrow-left.png),-o-linear-gradient(to right, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-image: url(../pic/arrow-left.png),-moz-linear-gradient(to right, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-image: url(../pic/arrow-left.png),linear-gradient(to right, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-position: center, center;
+}
+div.fotorama__arr--next {
+    right: 10%;
+    background-image: url(../pic/arrow-right.png),-webkit-linear-gradient(to left, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-image: url(../pic/arrow-right.png),-o-linear-gradient(to left, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-image: url(../pic/arrow-right.png),-moz-linear-gradient(to left, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-image: url(../pic/arrow-right.png),linear-gradient(to left, rgba(230,230,230,1), rgba(0,0,0,0));
+    background-position: center, center;
+
+}
+
+
 @media (max-width: 768px) {
     .merch-item img {
         margin: 10px auto;
@@ -130,5 +183,10 @@
 @media (min-width: 768px) {
     #nav {
         padding-right: 10px;
+    }
+}
+@media screen and (min-width: 992px){
+    .footer-main-left, .footer-main-right {
+        margin-top: 3%;
     }
 }

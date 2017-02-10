@@ -298,6 +298,7 @@ body a{
 }
 .about {
 	background: #FAF8F9;
+	padding: 30px 0;
 }
 .about-right h3{
 	font-size:1.8em;
@@ -506,12 +507,12 @@ body a{
 }
 .footer{
 	background:#141414;
-	padding: 4em 0px;
+	padding: 1.5em 0px;
 }
-.footer-main-left>form>* {
+.footer-main-left>form>input {
     padding-bottom: 0.5em;
-    background-color: #474747;
-    border-color: #545454;
+    background-color: #eeeeee;
+    border-color: #989898;
     color: #989898;
 }
 .footer-main-left button:hover {
@@ -547,9 +548,8 @@ body a{
 	background-position:-111px 0px;
 }
 .footer-main-right p{
-	color:#474747;
-	font-size:16px;
-	padding-top: 2.2em;
+	color:#fff;
+	font-size:14px;
 }
 .footer-bottom-left p{
 	padding-top: 0.6em;
@@ -607,7 +607,7 @@ body a{
 	font-size: 3.7em;
 }*/
 .promo {
-	padding: 3em 0px;
+	padding: 3em 0;
 }
 .promo-right p {
 	width: 86%;
