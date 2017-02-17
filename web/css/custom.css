@@ -162,6 +162,9 @@ div.fotorama__arr--next {
     background-position: center, center;
 
 }
+.merch-item-info>div>button {
+    z-index: 99999;
+}
 
 
 @media (max-width: 768px) {

@@ -93,8 +93,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </p>
                     </div>
                     <form>
-                        <input type="text" class="form-control" id="form-name" placeholder="Ваше имя" required>
-                        <input type="text" class="form-control" id="form-phone" placeholder="Ваш номер телефона"
+                        <input type="text" class="form-control" id="banner-form-name" placeholder="Ваше имя" required>
+                        <input type="text" class="form-control" id="banner-form-phone" placeholder="Ваш номер телефона"
                                required>
                         <button type="submit" class="btn btn-default form-control">Заказать!</button>
                     </form>
@@ -110,7 +110,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="fotorama row" data-width="100%" data-height="70%"
                  data-max-width="100%" data-nav="thumbs"
-                 data-thumbwidth="128" data-thumbheight="128">
+                 data-thumbwidth="128" data-thumbheight="128"
+                 data-click="false"
+            >
                 <div class="merch-item col-sm-offset-2 col-sm-7" data-thumb="img/merch/merch3.jpg">
                     <!--<div class="col-md-offset-2 col-md-5 text-center">-->
                     <span class="align-helper"></span>
@@ -492,8 +494,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="col-sm-4 col-sm-offset-1 footer-main-left">
                 <form>
-                    <input type="text" class="form-control" id="form-name" placeholder="Ваше имя" required>
-                    <input type="text" class="form-control" id="form-phone" placeholder="Ваш номер телефона"
+                    <input type="text" class="form-control" id="footer-name" placeholder="Ваше имя" required>
+                    <input type="text" class="form-control" id="footer-phone" placeholder="Ваш номер телефона"
                            required>
                     <button type="submit" class="btn btn-success form-control">Заказать!</button>
                 </form>
@@ -527,6 +529,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Заказ звонка</h4>
+                    <p id="modal-form-pen-name"></p>
                 </div>
                 <div class="modal-body">
                     <form>
@@ -550,9 +553,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
          easingType: 'linear'
          };
          */
-
         $().UItoTop({easingType: 'easeOutQuart'});
-
+        //if the device is a mobile one, then replace a form with a tel link
+        var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+        if (isMobile.matches) {
+            $(".call-icon>a").removeAttr("data-toggle");
+            $(".call-icon>a").removeAttr("data-target");
+            $(".call-icon>a").attr("href", "tel:1234567");
+        }
+    });
+</script>
+<script type="application/javascript">
+    $("#modal-form").on('show.bs.modal', function (e) {
+        var penName = $(e.relatedTarget).parent().find(">:first-child")[0].innerText;
+        $("#modal-form-pen-name").text(penName);
     });
 </script>
 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
